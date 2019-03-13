@@ -14,46 +14,13 @@
    <string>QtPlugin</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="../../nfdx64dbg/nfd/resource.qrc">
     <normaloff>:/icons/images/icon.png</normaloff>:/icons/images/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
-      <item>
-       <widget class="QPushButton" name="pushButtonScan">
-        <property name="font">
-         <font>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Scan</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="checkBoxScanOverlay">
-        <property name="text">
-         <string>Scan overlay</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QCheckBox" name="checkBoxDeepScan">
-        <property name="text">
-         <string>Deep scan</string>
-        </property>
-        <property name="checked">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
@@ -77,14 +44,17 @@
      </layout>
     </item>
     <item>
-     <widget class="FormResult" name="widgetResult" native="true">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
       </property>
-     </widget>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>548</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>
@@ -97,16 +67,8 @@
    </property>
   </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>FormResult</class>
-   <extends>QWidget</extends>
-   <header>formresult.h</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="../../nfdx64dbg/nfd/resource.qrc"/>
  </resources>
  <connections/>
 </ui>

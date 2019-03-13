@@ -27,6 +27,10 @@ int Plugin::hMenuDisasm;
 int Plugin::hMenuDump;
 int Plugin::hMenuStack;
 QString Plugin::sCurrentFileName;
+CREATE_PROCESS_DEBUG_INFO Plugin::CreateProcessInfo;
+IMAGEHLP_MODULE64 Plugin::modInfo;
+QString Plugin::sDebugFileName;
+PROCESS_INFORMATION Plugin::fdProcessInfo;
 
 extern "C" __declspec(dllexport) bool pluginit(PLUG_INITSTRUCT* initStruct)
 {
@@ -58,4 +62,12 @@ extern "C" __declspec(dllexport) bool plugstop()
 extern "C" __declspec(dllexport) void CBINITDEBUG(CBTYPE cbType, PLUG_CB_INITDEBUG* info)
 {
     Plugin::sCurrentFileName=info->szFileName;
+}
+
+extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CREATEPROCESS* info)
+{
+    Plugin::CreateProcessInfo=*(info->CreateProcessInfo);
+    Plugin::modInfo=*(info->modInfo);
+    Plugin::sDebugFileName=info->DebugFileName;
+    Plugin::fdProcessInfo=*(info->fdProcessInfo);
 }

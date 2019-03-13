@@ -33,11 +33,6 @@ PluginMainWindow::~PluginMainWindow()
     delete ui;
 }
 
-void PluginMainWindow::on_pushButtonScan_clicked()
-{
-
-}
-
 void PluginMainWindow::on_pushButtonInfo_clicked()
 {
     DialogInfo di(this);

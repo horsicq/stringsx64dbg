@@ -39,6 +39,10 @@ extern int hMenuDisasm;
 extern int hMenuDump;
 extern int hMenuStack;
 extern QString sCurrentFileName;
+extern CREATE_PROCESS_DEBUG_INFO CreateProcessInfo;
+extern IMAGEHLP_MODULE64 modInfo;
+extern QString sDebugFileName;
+extern PROCESS_INFORMATION fdProcessInfo;
 } //Plugin
 
 #endif //_PLUGINMAIN_H

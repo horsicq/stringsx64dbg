@@ -39,7 +39,6 @@ public:
     ~PluginMainWindow();
 
 private slots:
-    void on_pushButtonScan_clicked();
     void on_pushButtonInfo_clicked();
 
 private:
