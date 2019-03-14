@@ -1,0 +1,3 @@
+[submodule "FormatWidgets"]
+	path = FormatWidgets
+	url = git@github.com:horsicq/FormatWidgets.git
