@@ -1,6 +1,6 @@
-[submodule "FormatWidgets"]
-	path = FormatWidgets
-	url = git@github.com:horsicq/FormatWidgets.git
-[submodule "FormatDialogs"]
-	path = FormatDialogs
+[submodule "StringsPlugin/FormatDialogs"]
+	path = StringsPlugin/FormatDialogs
 	url = git@github.com:horsicq/FormatDialogs.git
+[submodule "StringsPlugin/FormatWidgets"]
+	path = StringsPlugin/FormatWidgets
+	url = git@github.com:horsicq/FormatWidgets.git
