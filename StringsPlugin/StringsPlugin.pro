@@ -139,5 +139,5 @@ RESOURCES += \
 
 !contains(XCONFIG, formresult) {
     XCONFIG += formresult
-    include(../../../_mylibs/FormatWidgets/searchstringswidget.pri)
+    include(FormatWidgets/searchstringswidget.pri)
 }
