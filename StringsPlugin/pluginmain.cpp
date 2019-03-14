@@ -31,6 +31,9 @@ CREATE_PROCESS_DEBUG_INFO Plugin::CreateProcessInfo;
 IMAGEHLP_MODULE64 Plugin::modInfo;
 QString Plugin::sDebugFileName;
 PROCESS_INFORMATION Plugin::fdProcessInfo;
+SearchStringsWidget *Plugin::pSearchWidget=nullptr;
+QIODevice *Plugin::pDevice=nullptr;
+qint64 Plugin::nAddress=0;
 
 extern "C" __declspec(dllexport) bool pluginit(PLUG_INITSTRUCT* initStruct)
 {
@@ -70,4 +73,12 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
     Plugin::modInfo=*(info->modInfo);
     Plugin::sDebugFileName=info->DebugFileName;
     Plugin::fdProcessInfo=*(info->fdProcessInfo);
+
+    if(Plugin::pSearchWidget)
+    {
+        if(Plugin::pDevice)
+        {
+            delete Plugin::pDevice;
+        }
+    }
 }

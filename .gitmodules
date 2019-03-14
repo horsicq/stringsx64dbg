@@ -4,3 +4,6 @@
 [submodule "StringsPlugin/FormatWidgets"]
 	path = StringsPlugin/FormatWidgets
 	url = git@github.com:horsicq/FormatWidgets.git
+[submodule "StringsPlugin/XProcess"]
+	path = StringsPlugin/XProcess
+	url = git@github.com:horsicq/XProcess.git

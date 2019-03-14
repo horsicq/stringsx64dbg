@@ -37,6 +37,7 @@ class PluginMainWindow : public QMainWindow
 public:
     explicit PluginMainWindow(QWidget* parent = nullptr);
     ~PluginMainWindow();
+    void setData(QIODevice *pDevice, SearchStrings::OPTIONS *pOptions=nullptr, bool bAuto=false);
 
 private slots:
 

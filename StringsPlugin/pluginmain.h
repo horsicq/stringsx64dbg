@@ -25,6 +25,9 @@
 #include "pluginsdk\_plugins.h"
 #include "QtPlugin.h"
 #include <QString>
+#include "searchstringswidget.h"
+#include "xprocess.h"
+#include "xprocessdevice.h"
 
 #define plugin_name "Strings"
 #define plugin_version 1 // 0.01
@@ -43,6 +46,9 @@ extern CREATE_PROCESS_DEBUG_INFO CreateProcessInfo;
 extern IMAGEHLP_MODULE64 modInfo;
 extern QString sDebugFileName;
 extern PROCESS_INFORMATION fdProcessInfo;
+extern SearchStringsWidget *pSearchWidget;
+extern QIODevice *pDevice;
+extern qint64 nAddress;
 } //Plugin
 
 #endif //_PLUGINMAIN_H

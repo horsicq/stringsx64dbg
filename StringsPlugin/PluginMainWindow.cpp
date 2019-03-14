@@ -21,21 +21,14 @@
 #include "PluginMainWindow.h"
 #include "ui_PluginMainWindow.h"
 
-#include "pluginmain.h"
-
 PluginMainWindow::PluginMainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::PluginMainWindow)
 {
     ui->setupUi(this);
+
+    Plugin::pSearchWidget=ui->widgetStrings;
 }
 
 PluginMainWindow::~PluginMainWindow()
 {
     delete ui;
-}
-
-void PluginMainWindow::on_pushButtonInfo_clicked()
-{
-    DialogInfo di(this);
-
-    di.exec();
 }

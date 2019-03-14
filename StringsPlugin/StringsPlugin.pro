@@ -141,3 +141,9 @@ RESOURCES += \
     XCONFIG += formresult
     include(FormatWidgets/searchstringswidget.pri)
 }
+
+!contains(XCONFIG, xprocess) {
+    XCONFIG += xprocess
+    include(XProcess/xprocess.pri)
+}
+
