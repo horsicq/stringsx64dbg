@@ -47,8 +47,9 @@ extern IMAGEHLP_MODULE64 modInfo;
 extern QString sDebugFileName;
 extern PROCESS_INFORMATION fdProcessInfo;
 extern SearchStringsWidget *pSearchWidget;
-extern QIODevice *pDevice;
+extern XProcessDevice *pDevice;
 extern qint64 nAddress;
+extern SearchStrings::OPTIONS options;
 } //Plugin
 
 #endif //_PLUGINMAIN_H

@@ -32,8 +32,9 @@ IMAGEHLP_MODULE64 Plugin::modInfo;
 QString Plugin::sDebugFileName;
 PROCESS_INFORMATION Plugin::fdProcessInfo;
 SearchStringsWidget *Plugin::pSearchWidget=nullptr;
-QIODevice *Plugin::pDevice=nullptr;
+XProcessDevice *Plugin::pDevice=nullptr;
 qint64 Plugin::nAddress=0;
+SearchStrings::OPTIONS Plugin::options;
 
 extern "C" __declspec(dllexport) bool pluginit(PLUG_INITSTRUCT* initStruct)
 {
@@ -79,6 +80,17 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
         if(Plugin::pDevice)
         {
             delete Plugin::pDevice;
+        }
+
+        qint64 nImageAddress=(qint64)Plugin::CreateProcessInfo.lpBaseOfImage;
+        qint64 nImageSize=XProcess::getImageSize(Plugin::CreateProcessInfo.hProcess,nImageAddress);
+
+        Plugin::pDevice=new XProcessDevice;
+
+        if(Plugin::pDevice->openHandle(Plugin::CreateProcessInfo.hProcess,nImageAddress,nImageSize,QIODevice::ReadOnly))
+        {
+            Plugin::options.nBaseAddress=nImageAddress;
+            Plugin::pSearchWidget->setData(Plugin::pDevice,&(Plugin::options),false);
         }
     }
 }
