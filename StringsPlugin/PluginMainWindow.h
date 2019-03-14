@@ -22,8 +22,8 @@
 #define PLUGINMAINWINDOW_H
 
 #include <QMainWindow>
-
-#include "dialoginfo.h"
+#include "pluginmain.h"
+#include "searchstringswidget.h"
 
 namespace Ui
 {
@@ -39,7 +39,6 @@ public:
     ~PluginMainWindow();
 
 private slots:
-    void on_pushButtonInfo_clicked();
 
 private:
     Ui::PluginMainWindow* ui;

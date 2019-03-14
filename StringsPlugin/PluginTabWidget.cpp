@@ -20,7 +20,6 @@
 //
 #include "PluginTabWidget.h"
 
-
 PluginTabWidget::PluginTabWidget(QWidget* parent) :
     QWidget(parent)
 {
@@ -30,7 +29,7 @@ PluginTabWidget::PluginTabWidget(QWidget* parent) :
     layout->addWidget(mPluginMainWindow);
     layout->setMargin(0);
     setLayout(layout);
-    //    setWindowTitle(mPluginMainWindow->windowTitle());
+
     setWindowTitle(tr("Strings"));
     setWindowIcon(mPluginMainWindow->windowIcon());
 }
