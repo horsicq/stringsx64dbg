@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SPPluginMainWindow</class>
+ <widget class="QMainWindow" name="SPPluginMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtPlugin</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/images/spicon.png</normaloff>:/icons/images/spicon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="SearchStringsWidget" name="widgetStrings" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionClearText">
+   <property name="text">
+    <string>&amp;Clear Text</string>
+   </property>
+   <property name="toolTip">
+    <string>Clear Text</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SearchStringsWidget</class>
+   <extends>QWidget</extends>
+   <header>searchstringswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
