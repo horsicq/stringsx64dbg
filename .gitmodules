@@ -1,9 +1,9 @@
 [submodule "StringsPlugin/FormatDialogs"]
 	path = StringsPlugin/FormatDialogs
-	url = git@github.com:horsicq/FormatDialogs.git
+	url = https://github.com/horsicq/FormatDialogs
 [submodule "StringsPlugin/FormatWidgets"]
 	path = StringsPlugin/FormatWidgets
-	url = git@github.com:horsicq/FormatWidgets.git
+	url = https://github.com/horsicq/FormatWidgets
 [submodule "StringsPlugin/XProcess"]
 	path = StringsPlugin/XProcess
-	url = git@github.com:horsicq/XProcess.git
+	url = https://github.com/horsicq/XProcess
