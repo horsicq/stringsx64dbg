@@ -46,9 +46,9 @@ LIBS += -luser32 -lshlwapi
 SOURCES +=\
     pluginmain.cpp \
     QtPlugin.cpp \
-    PluginMainWindow.cpp \
-    PluginTabWidget.cpp \
-    dialoginfo.cpp
+    SPPluginMainWindow.cpp \
+    SPPluginTabWidget.cpp \
+    spdialoginfo.cpp
 
 HEADERS  += \
     pluginmain.h \
@@ -117,8 +117,8 @@ HEADERS  += \
     pluginsdk/_scriptapi_stack.h \
     pluginsdk/bridgemain.h \
     QtPlugin.h \
-    PluginMainWindow.h \
-    PluginTabWidget.h \
+    SPPluginMainWindow.h \
+    SPPluginTabWidget.h \
     pluginsdk/_scriptapi_argument.h \
     pluginsdk/_scriptapi_bookmark.h \
     pluginsdk/_scriptapi_comment.h \
@@ -128,11 +128,11 @@ HEADERS  += \
     pluginsdk/_scriptapi_symbol.h \
     pluginsdk/bridgegraph.h \
     pluginsdk/bridgelist.h \
-    dialoginfo.h
+    spdialoginfo.h
 
 FORMS    += \
-    PluginMainWindow.ui \
-    dialoginfo.ui
+    SPPluginMainWindow.ui \
+    spdialoginfo.ui
 
 RESOURCES += \
     resource.qrc

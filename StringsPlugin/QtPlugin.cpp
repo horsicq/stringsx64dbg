@@ -21,9 +21,9 @@
 #include "QtPlugin.h"
 
 //#include "pluginmain.h"
-#include "PluginTabWidget.h"
+#include "SPPluginTabWidget.h"
 
-static PluginTabWidget* pluginTabWidget;
+static SPPluginTabWidget* pluginTabWidget;
 
 static QWidget* getParent()
 {
@@ -37,7 +37,7 @@ void QtPlugin::Init()
 void QtPlugin::Setup()
 {
     QWidget* parent = getParent();
-    pluginTabWidget = new PluginTabWidget(parent);
+    pluginTabWidget = new SPPluginTabWidget(parent);
     GuiAddQWidgetTab(pluginTabWidget);
 }
 

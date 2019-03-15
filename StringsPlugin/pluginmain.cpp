@@ -55,6 +55,8 @@ extern "C" __declspec(dllexport) void plugsetup(PLUG_SETUPSTRUCT* setupStruct)
     Plugin::hMenuDump = setupStruct->hMenuDump;
     Plugin::hMenuStack = setupStruct->hMenuStack;
     GuiExecuteOnGuiThread(QtPlugin::Setup);
+
+    _plugin_menuaddentry(Plugin::hMenu, 0, "&About...");
 }
 
 extern "C" __declspec(dllexport) bool plugstop()
@@ -92,5 +94,22 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
             Plugin::options.nBaseAddress=nImageAddress;
             Plugin::pSearchWidget->setData(Plugin::pDevice,&(Plugin::options),false);
         }
+    }
+}
+
+extern "C" __declspec(dllexport) void CBMENUENTRY(CBTYPE cbType, PLUG_CB_MENUENTRY* info)
+{
+    switch(info->hEntry)
+    {
+    case Plugin::PLUGIN_MENU_ABOUT:
+        if(Plugin::pSearchWidget)
+        {
+            SPDialogInfo di(Plugin::pSearchWidget);
+
+            di.exec();
+        }
+        break;
+    default:
+        break;
     }
 }

@@ -24,6 +24,10 @@
 //#include "PluginTabWidget.h"
 //#include "PluginMainWindow.h"
 
+#define plugin_name "Strings"
+#define plugin_version 1 // 0.01
+#define plugin_version_str "0.01"
+
 namespace QtPlugin
 {
 void Init();

@@ -28,10 +28,7 @@
 #include "searchstringswidget.h"
 #include "xprocess.h"
 #include "xprocessdevice.h"
-
-#define plugin_name "Strings"
-#define plugin_version 1 // 0.01
-#define plugin_version_str "0.01"
+#include "spdialoginfo.h"
 
 namespace Plugin
 {
@@ -50,6 +47,11 @@ extern SearchStringsWidget *pSearchWidget;
 extern XProcessDevice *pDevice;
 extern qint64 nAddress;
 extern SearchStrings::OPTIONS options;
+
+enum PLUGIN_MENU
+{
+    PLUGIN_MENU_ABOUT
+};
 } //Plugin
 
 #endif //_PLUGINMAIN_H
