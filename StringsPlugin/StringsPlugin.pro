@@ -139,7 +139,7 @@ RESOURCES += \
 
 !contains(XCONFIG, formresult) {
     XCONFIG += formresult
-    include(FormatWidgets/searchstringswidget.pri)
+    include(../../../_mylibs/FormatWidgets/SearchStrings/searchstringswidget.pri)
 }
 
 !contains(XCONFIG, xprocess) {
