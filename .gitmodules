@@ -7,3 +7,12 @@
 [submodule "StringsPlugin/XProcess"]
 	path = StringsPlugin/XProcess
 	url = https://github.com/horsicq/XProcess
+[submodule "StringsPlugin/Controls"]
+	path = StringsPlugin/Controls
+	url = https://github.com/horsicq/Controls.git
+[submodule "StringsPlugin/QHexView"]
+	path = StringsPlugin/QHexView
+	url = https://github.com/horsicq/QHexView.git
+[submodule "StringsPlugin/Formats"]
+	path = StringsPlugin/Formats
+	url = https://github.com/horsicq/Formats.git
