@@ -81,7 +81,13 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
     {
         if(Plugin::pDevice)
         {
+            if(Plugin::pDevice->isOpen())
+            {
+                Plugin::pDevice->close();
+            }
+
             delete Plugin::pDevice;
+            Plugin::pDevice=0;
         }
 
         qint64 nImageAddress=(qint64)Plugin::CreateProcessInfo.lpBaseOfImage;
@@ -92,9 +98,26 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
         if(Plugin::pDevice->openHandle(Plugin::CreateProcessInfo.hProcess,nImageAddress,nImageSize,QIODevice::ReadOnly))
         {
             Plugin::options.nBaseAddress=nImageAddress;
+            Plugin::pSearchWidget->show();
             Plugin::pSearchWidget->setData(Plugin::pDevice,&(Plugin::options),false);
         }
     }
+}
+
+extern "C" __declspec(dllexport) void CBSTOPDEBUG(CBTYPE cbType, PLUG_CB_STOPDEBUG* info)
+{
+    if(Plugin::pDevice)
+    {
+        if(Plugin::pDevice->isOpen())
+        {
+            Plugin::pDevice->close();
+        }
+
+        delete Plugin::pDevice;
+        Plugin::pDevice=0;
+    }
+
+    Plugin::pSearchWidget->hide();
 }
 
 extern "C" __declspec(dllexport) void CBMENUENTRY(CBTYPE cbType, PLUG_CB_MENUENTRY* info)
