@@ -24,6 +24,8 @@
 #include "SPPluginTabWidget.h"
 
 static SPPluginTabWidget* pluginTabWidget;
+static HANDLE hSetupEvent;
+static HANDLE hStopEvent;
 
 static QWidget* getParent()
 {
@@ -32,6 +34,8 @@ static QWidget* getParent()
 
 void QtPlugin::Init()
 {
+    hSetupEvent = CreateEventW(nullptr, true, false, nullptr);
+    hStopEvent = CreateEventW(nullptr, true, false, nullptr);
 }
 
 void QtPlugin::Setup()
@@ -39,12 +43,25 @@ void QtPlugin::Setup()
     QWidget* parent = getParent();
     pluginTabWidget = new SPPluginTabWidget(parent);
     GuiAddQWidgetTab(pluginTabWidget);
+    SetEvent(hSetupEvent);
+}
+
+void QtPlugin::WaitForSetup()
+{
+    WaitForSingleObject(hSetupEvent, INFINITE);
 }
 
 void QtPlugin::Stop()
 {
     GuiCloseQWidgetTab(pluginTabWidget);
+    pluginTabWidget->close();
     delete pluginTabWidget;
+    SetEvent(hStopEvent);
+}
+
+void QtPlugin::WaitForStop()
+{
+    WaitForSingleObject(hStopEvent, INFINITE);
 }
 
 void QtPlugin::ShowTab()
