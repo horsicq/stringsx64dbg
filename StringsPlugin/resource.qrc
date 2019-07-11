@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/icons">
+    <qresource prefix="/icons_sp">
         <file>images/spicon.png</file>
         <file>images/spmain.png</file>
     </qresource>

@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>Information</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons_sp/images/spicon.png</normaloff>:/icons_sp/images/spicon.png</iconset>
+  </property>
   <property name="modal">
    <bool>true</bool>
   </property>
@@ -26,7 +30,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap resource="resource.qrc">:/icons/images/spmain.png</pixmap>
+      <pixmap resource="resource.qrc">:/icons_sp/images/spmain.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>

@@ -31,7 +31,7 @@ SPPluginTabWidget::SPPluginTabWidget(QWidget* parent) :
     setLayout(layout);
 
     setWindowTitle(tr("Strings"));
-    setWindowIcon(QIcon(":/icons/images/spicon.png"));
+    setWindowIcon(QIcon(":/icons_sp/images/spicon.png"));
 }
 
 void SPPluginTabWidget::closeEvent(QCloseEvent* event)
