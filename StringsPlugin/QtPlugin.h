@@ -25,8 +25,8 @@
 //#include "PluginMainWindow.h"
 
 #define plugin_name "Strings"
-#define plugin_version 4 // 0.04
-#define plugin_version_str "0.04"
+#define plugin_version 5 // 0.05
+#define plugin_version_str "0.05"
 
 namespace QtPlugin
 {
