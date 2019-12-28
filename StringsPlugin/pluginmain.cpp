@@ -93,7 +93,7 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
         }
 
         qint64 nImageAddress=(qint64)Plugin::CreateProcessInfo.lpBaseOfImage;
-        qint64 nImageSize=XProcess::getImageSize(Plugin::CreateProcessInfo.hProcess,nImageAddress);
+        qint64 nImageSize=XProcess::getRegionAllocationSize(Plugin::CreateProcessInfo.hProcess,nImageAddress);
 
         Plugin::pDevice=new XProcessDevice;
 
