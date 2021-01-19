@@ -16,3 +16,6 @@
 [submodule "StringsPlugin/Formats"]
 	path = StringsPlugin/Formats
 	url = https://github.com/horsicq/Formats.git
+[submodule "XShortcuts"]
+	path = XShortcuts
+	url = https://github.com/horsicq/XShortcuts.git
