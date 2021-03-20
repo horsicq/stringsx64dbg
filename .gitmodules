@@ -25,3 +25,6 @@
 [submodule "StringsPlugin/XLLVMDemangler"]
 	path = StringsPlugin/XLLVMDemangler
 	url = https://github.com/horsicq/XLLVMDemangler.git
+[submodule "StringsPlugin/XDemangleWidget"]
+	path = StringsPlugin/XDemangleWidget
+	url = https://github.com/horsicq/XDemangleWidget.git
