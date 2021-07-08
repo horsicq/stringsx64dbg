@@ -31,3 +31,6 @@
 [submodule "StringsPlugin/build_tools"]
 	path = StringsPlugin/build_tools
 	url = https://github.com/horsicq/build_tools
+[submodule "StringsPlugin/XCppfilt"]
+	path = StringsPlugin/XCppfilt
+	url = https://github.com/horsicq/XCppfilt
