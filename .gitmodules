@@ -34,3 +34,6 @@
 [submodule "StringsPlugin/XCppfilt"]
 	path = StringsPlugin/XCppfilt
 	url = https://github.com/horsicq/XCppfilt
+[submodule "StringsPlugin/XOptions"]
+	path = StringsPlugin/XOptions
+	url = https://github.com/horsicq/XOptions
