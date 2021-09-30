@@ -37,3 +37,12 @@
 [submodule "StringsPlugin/XOptions"]
 	path = StringsPlugin/XOptions
 	url = https://github.com/horsicq/XOptions
+[submodule "StringsPlugin/XDynStructs"]
+	path = StringsPlugin/XDynStructs
+	url = https://github.com/horsicq/XDynStructs
+[submodule "StringsPlugin/XDynStructsEngine"]
+	path = StringsPlugin/XDynStructsEngine
+	url = https://github.com/horsicq/XDynStructsEngine
+[submodule "StringsPlugin/XDynStructsWidget"]
+	path = StringsPlugin/XDynStructsWidget
+	url = https://github.com/horsicq/XDynStructsWidget
