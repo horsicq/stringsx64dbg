@@ -46,3 +46,6 @@
 [submodule "StringsPlugin/XDynStructsWidget"]
 	path = StringsPlugin/XDynStructsWidget
 	url = https://github.com/horsicq/XDynStructsWidget
+[submodule "StringsPlugin/XCapstone"]
+	path = StringsPlugin/XCapstone
+	url = https://github.com/horsicq/XCapstone
