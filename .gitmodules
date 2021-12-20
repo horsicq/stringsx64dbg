@@ -49,3 +49,6 @@
 [submodule "StringsPlugin/XCapstone"]
 	path = StringsPlugin/XCapstone
 	url = https://github.com/horsicq/XCapstone
+[submodule "StringsPlugin/XFileInfo"]
+	path = StringsPlugin/XFileInfo
+	url = https://github.com/horsicq/XFileInfo
