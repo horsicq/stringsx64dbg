@@ -46,7 +46,7 @@ extern PROCESS_INFORMATION fdProcessInfo;
 extern SearchStringsWidget *pSearchWidget;
 extern XProcessDevice *pDevice;
 extern qint64 nAddress;
-extern SearchStrings::OPTIONS options;
+extern SearchStringsWidget::OPTIONS options;
 
 enum PLUGIN_MENU
 {

@@ -34,7 +34,7 @@ PROCESS_INFORMATION Plugin::fdProcessInfo;
 SearchStringsWidget *Plugin::pSearchWidget=nullptr;
 XProcessDevice *Plugin::pDevice=nullptr;
 qint64 Plugin::nAddress=0;
-SearchStrings::OPTIONS Plugin::options;
+SearchStringsWidget::OPTIONS Plugin::options;
 
 extern "C" __declspec(dllexport) bool pluginit(PLUG_INITSTRUCT* initStruct)
 {
@@ -101,7 +101,7 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
         {
             Plugin::options.nBaseAddress=nImageAddress;
             Plugin::pSearchWidget->show();
-            Plugin::pSearchWidget->setData(Plugin::pDevice,&(Plugin::options),false);
+            Plugin::pSearchWidget->setData(Plugin::pDevice,(Plugin::options),false);
         }
     }
 }
