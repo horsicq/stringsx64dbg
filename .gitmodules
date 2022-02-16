@@ -9,7 +9,7 @@
 	url = https://github.com/horsicq/XProcess
 [submodule "StringsPlugin/Controls"]
 	path = StringsPlugin/Controls
-	url = https://github.com/horsicq/Controls.git
+	url = https://github.com/horsicq/Controls
 [submodule "StringsPlugin/QHexView"]
 	path = StringsPlugin/QHexView
 	url = https://github.com/horsicq/QHexView.git
@@ -18,7 +18,7 @@
 	url = https://github.com/horsicq/Formats.git
 [submodule "StringsPlugin/XDemangle"]
 	path = StringsPlugin/XDemangle
-	url = https://github.com/horsicq/XDemangle.git
+	url = https://github.com/horsicq/XDemangle
 [submodule "StringsPlugin/XShortcuts"]
 	path = StringsPlugin/XShortcuts
 	url = https://github.com/horsicq/XShortcuts.git
@@ -27,7 +27,7 @@
 	url = https://github.com/horsicq/XLLVMDemangler.git
 [submodule "StringsPlugin/XDemangleWidget"]
 	path = StringsPlugin/XDemangleWidget
-	url = https://github.com/horsicq/XDemangleWidget.git
+	url = https://github.com/horsicq/XDemangleWidget
 [submodule "StringsPlugin/build_tools"]
 	path = StringsPlugin/build_tools
 	url = https://github.com/horsicq/build_tools
