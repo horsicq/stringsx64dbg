@@ -55,3 +55,48 @@
 [submodule "StringsPlugin/XPDF"]
 	path = StringsPlugin/XPDF
 	url = https://github.com/horsicq/XPDF
+[submodule "StringsPlugin/StaticScan"]
+	path = StringsPlugin/StaticScan
+	url = https://github.com/horsicq/StaticScan
+[submodule "StringsPlugin/SpecAbstract"]
+	path = StringsPlugin/SpecAbstract
+	url = https://github.com/horsicq/SpecAbstract
+[submodule "StringsPlugin/XArchive"]
+	path = StringsPlugin/XArchive
+	url = https://github.com/horsicq/XArchive
+[submodule "StringsPlugin/XDEX"]
+	path = StringsPlugin/XDEX
+	url = https://github.com/horsicq/XDEX
+[submodule "StringsPlugin/XStyles"]
+	path = StringsPlugin/XStyles
+	url = https://github.com/horsicq/XStyles
+[submodule "StringsPlugin/XTranslation"]
+	path = StringsPlugin/XTranslation
+	url = https://github.com/horsicq/XTranslation
+[submodule "StringsPlugin/XHashWidget"]
+	path = StringsPlugin/XHashWidget
+	url = https://github.com/horsicq/XHashWidget
+[submodule "StringsPlugin/XDisasm"]
+	path = StringsPlugin/XDisasm
+	url = https://github.com/horsicq/XDisasm
+[submodule "StringsPlugin/archive_widget"]
+	path = StringsPlugin/archive_widget
+	url = https://github.com/horsicq/archive_widget
+[submodule "StringsPlugin/XHexView"]
+	path = StringsPlugin/XHexView
+	url = https://github.com/horsicq/XHexView
+[submodule "StringsPlugin/XDisasmView"]
+	path = StringsPlugin/XDisasmView
+	url = https://github.com/horsicq/XDisasmView
+[submodule "StringsPlugin/XEntropyWidget"]
+	path = StringsPlugin/XEntropyWidget
+	url = https://github.com/horsicq/XEntropyWidget
+[submodule "StringsPlugin/XMemoryMapWidget"]
+	path = StringsPlugin/XMemoryMapWidget
+	url = https://github.com/horsicq/XMemoryMapWidget
+[submodule "StringsPlugin/XQwt"]
+	path = StringsPlugin/XQwt
+	url = https://github.com/horsicq/XQwt
+[submodule "StringsPlugin/signatures"]
+	path = StringsPlugin/signatures
+	url = https://github.com/horsicq/signatures
