@@ -55,3 +55,6 @@
 [submodule "StringsPlugin/XPDF"]
 	path = StringsPlugin/XPDF
 	url = https://github.com/horsicq/XPDF
+[submodule "StringsPlugin/XInfoDB"]
+	path = StringsPlugin/XInfoDB
+	url = https://github.com/horsicq/XInfoDB
