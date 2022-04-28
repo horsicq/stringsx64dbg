@@ -58,3 +58,6 @@
 [submodule "StringsPlugin/XInfoDB"]
 	path = StringsPlugin/XInfoDB
 	url = https://github.com/horsicq/XInfoDB
+[submodule "StringsPlugin/XSymbolsWidget"]
+	path = StringsPlugin/XSymbolsWidget
+	url = https://github.com/horsicq/XSymbolsWidget
