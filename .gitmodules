@@ -61,3 +61,6 @@
 [submodule "StringsPlugin/XSymbolsWidget"]
 	path = StringsPlugin/XSymbolsWidget
 	url = https://github.com/horsicq/XSymbolsWidget
+[submodule "StringsPlugin/XOnlineTools"]
+	path = StringsPlugin/XOnlineTools
+	url = https://github.com/horsicq/XOnlineTools
