@@ -64,3 +64,6 @@
 [submodule "StringsPlugin/XOnlineTools"]
 	path = StringsPlugin/XOnlineTools
 	url = https://github.com/horsicq/XOnlineTools
+[submodule "StringsPlugin/XAboutWidget"]
+	path = StringsPlugin/XAboutWidget
+	url = https://github.com/horsicq/XAboutWidget
