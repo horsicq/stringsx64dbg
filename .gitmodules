@@ -67,6 +67,3 @@
 [submodule "StringsPlugin/XAboutWidget"]
 	path = StringsPlugin/XAboutWidget
 	url = https://github.com/horsicq/XAboutWidget
-[submodule "StringsPlugin/XExtractorWidget"]
-	path = StringsPlugin/XExtractorWidget
-	url = https://github.com/horsicq/XExtractorWidget
