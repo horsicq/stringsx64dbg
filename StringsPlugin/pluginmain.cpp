@@ -101,7 +101,7 @@ extern "C" __declspec(dllexport) void CBCREATEPROCESS(CBTYPE cbType, PLUG_CB_CRE
         {
             Plugin::options.nBaseAddress=nImageAddress;
             Plugin::pSearchWidget->show();
-            Plugin::pSearchWidget->setData(Plugin::pDevice,(Plugin::options),false);
+            Plugin::pSearchWidget->setData(Plugin::pDevice, XBinary::FT_REGION, (Plugin::options),false);
         }
     }
 }
