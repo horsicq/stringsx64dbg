@@ -73,3 +73,6 @@
 [submodule "StringsPlugin/XScanEngine"]
 	path = StringsPlugin/XScanEngine
 	url = https://github.com/horsicq/XScanEngine
+[submodule "StringsPlugin/XDisasmCore"]
+	path = StringsPlugin/XDisasmCore
+	url = https://github.com/horsicq/XDisasmCore.git
