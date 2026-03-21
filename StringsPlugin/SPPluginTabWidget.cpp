@@ -27,7 +27,7 @@ SPPluginTabWidget::SPPluginTabWidget(QWidget* parent) :
     mPluginMainWindow->setAutoFillBackground(true);
     QVBoxLayout* layout = new QVBoxLayout(parent);
     layout->addWidget(mPluginMainWindow);
-    layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     setLayout(layout);
 
     setWindowTitle(tr("Strings"));
