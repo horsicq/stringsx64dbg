@@ -27,7 +27,7 @@ SPDialogInfo::SPDialogInfo(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->labelVersion->setText(tr("Plugin version: %1").arg(plugin_version_str));
+    ui->labelVersion->setText(tr("Plugin version") + QString(": %1").arg(plugin_version_str));
 }
 
 SPDialogInfo::~SPDialogInfo()
