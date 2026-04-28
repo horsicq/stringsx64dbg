@@ -1,0 +1,87 @@
+[submodule "StringsPlugin/Controls"]
+	path = StringsPlugin/Controls
+	url = https://github.com/horsicq/Controls
+[submodule "StringsPlugin/FormatDialogs"]
+	path = StringsPlugin/FormatDialogs
+	url = https://github.com/horsicq/FormatDialogs
+[submodule "StringsPlugin/FormatWidgets"]
+	path = StringsPlugin/FormatWidgets
+	url = https://github.com/horsicq/FormatWidgets
+[submodule "StringsPlugin/Formats"]
+	path = StringsPlugin/Formats
+	url = https://github.com/horsicq/Formats
+[submodule "StringsPlugin/XAboutWidget"]
+	path = StringsPlugin/XAboutWidget
+	url = https://github.com/horsicq/XAboutWidget
+[submodule "StringsPlugin/XArchive"]
+	path = StringsPlugin/XArchive
+	url = https://github.com/horsicq/XArchive
+[submodule "StringsPlugin/XCapstone"]
+	path = StringsPlugin/XCapstone
+	url = https://github.com/horsicq/XCapstone
+[submodule "StringsPlugin/XCppfilt"]
+	path = StringsPlugin/XCppfilt
+	url = https://github.com/horsicq/XCppfilt
+[submodule "StringsPlugin/XDEX"]
+	path = StringsPlugin/XDEX
+	url = https://github.com/horsicq/XDEX
+[submodule "StringsPlugin/XDemangle"]
+	path = StringsPlugin/XDemangle
+	url = https://github.com/horsicq/XDemangle
+[submodule "StringsPlugin/XDemangleWidget"]
+	path = StringsPlugin/XDemangleWidget
+	url = https://github.com/horsicq/XDemangleWidget
+[submodule "StringsPlugin/XDisasmCore"]
+	path = StringsPlugin/XDisasmCore
+	url = https://github.com/horsicq/XDisasmCore
+[submodule "StringsPlugin/XDynStructs"]
+	path = StringsPlugin/XDynStructs
+	url = https://github.com/horsicq/XDynStructs
+[submodule "StringsPlugin/XDynStructsEngine"]
+	path = StringsPlugin/XDynStructsEngine
+	url = https://github.com/horsicq/XDynStructsEngine
+[submodule "StringsPlugin/XDynStructsWidget"]
+	path = StringsPlugin/XDynStructsWidget
+	url = https://github.com/horsicq/XDynStructsWidget
+[submodule "StringsPlugin/XExtractor"]
+	path = StringsPlugin/XExtractor
+	url = https://github.com/horsicq/XExtractor
+[submodule "StringsPlugin/XFileInfo"]
+	path = StringsPlugin/XFileInfo
+	url = https://github.com/horsicq/XFileInfo
+[submodule "StringsPlugin/XInfoDB"]
+	path = StringsPlugin/XInfoDB
+	url = https://github.com/horsicq/XInfoDB
+[submodule "StringsPlugin/XOnlineTools"]
+	path = StringsPlugin/XOnlineTools
+	url = https://github.com/horsicq/XOnlineTools
+[submodule "StringsPlugin/XOptions"]
+	path = StringsPlugin/XOptions
+	url = https://github.com/horsicq/XOptions
+[submodule "StringsPlugin/XPDF"]
+	path = StringsPlugin/XPDF
+	url = https://github.com/horsicq/XPDF
+[submodule "StringsPlugin/XProcess"]
+	path = StringsPlugin/XProcess
+	url = https://github.com/horsicq/XProcess
+[submodule "StringsPlugin/XScanEngine"]
+	path = StringsPlugin/XScanEngine
+	url = https://github.com/horsicq/XScanEngine
+[submodule "StringsPlugin/XShortcuts"]
+	path = StringsPlugin/XShortcuts
+	url = https://github.com/horsicq/XShortcuts
+[submodule "StringsPlugin/XSymbolsWidget"]
+	path = StringsPlugin/XSymbolsWidget
+	url = https://github.com/horsicq/XSymbolsWidget
+[submodule "StringsPlugin/build_tools"]
+	path = StringsPlugin/build_tools
+	url = https://github.com/horsicq/build_tools
+[submodule "StringsPlugin/nfd_widget"]
+	path = StringsPlugin/nfd_widget
+	url = https://github.com/horsicq/nfd_widget
+[submodule "StringsPlugin/SpecAbstract"]
+	path = StringsPlugin/SpecAbstract
+	url = https://github.com/horsicq/SpecAbstract
+[submodule "StringsPlugin/StaticScan"]
+	path = StringsPlugin/StaticScan
+	url = https://github.com/horsicq/StaticScan
